@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>REST with Forms</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+    <script type="text/javascript">
+     function checkvalue(val)
+     {
+        if(val==="others")
+            document.getElementById('color').style.display='block';
+        else
+            document.getElementById('color').style.display='none';
+     }
+
+        </script>
+
+        <br />
+        <form method="post" action="http://127.0.0.1:5000/">
+            Name: <input type="text" name="name" id="name" /><br />
+            Phone: <input type="number" name="phone" id="phone" /><br />
+            Date: <input type="date" name="date" id="date" /><br />
+            Time: <input type="time" name="time" id="time" /><br />
+            Size: <select name="size">
+                <option value="2lb">2lb</option>
+                <option value="1/4 sheet">1/4 sheet</option>
+                <option value="1/2 sheet">1/2 sheet</option>
+                <option value="3/4 sheet">3/4 sheet</option>
+                 <option value="Full sheet">Full sheet</option>
+             </select><br>
+            Flavour: <select name="flavour">
+                <option value="Black Forest">Black Forest</option>
+                <option value="Pine apple">Pine apple</option>
+                <option value="Butter scotch">Butter scotch</option>
+                <option value="Mixed fruit">Mixed fruit</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Cookie cream">Cookie cream</option>
+                <option value="White forest">White forest</option>
+            </select><br>
+
+            <input type="radio" name="spec" value="regular"> Regular<br>
+            <input type="radio" name="spec" value="eggless"> Eggless<br>
+            Price: <input type="text" name="price" id="price" /><br />
+            </select>
+            Message:<TEXTAREA NAME="message" ROWS=3 COLS=30 id="message"></TEXTAREA><br>
+
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
