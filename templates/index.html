@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>REST with Forms</title>
+
+	<link rel="stylesheet" href="static/styles/assets/demo.css">
+	<link rel="stylesheet" href="static/styles/assets/form-basic.css">
+
+</head>
+
+
+	<header>
+		<h1>FOX TAIL FOOT</h1>
+    </header>
+
+
+
+
+    <div class="main-content">
+
+
+
+        <form class="form-basic" method="post" action="http://127.0.0.1:5000/order">
+
+            <div class="form-title-row">
+                <h1>CAKE ORDER FORM</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="name" id="name" >
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Phone</span>
+                    <input type="number" name="phone" id="phone" >
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Date</span>
+                    <input type="date" name="date" id="date" >
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Time</span>
+                    <input type="time" name="time" id="time" >
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Size</span>
+                    <select name="size">
+                        <option value="2lb">2lb</option>
+                        <option value="1/4 sheet">1/4 sheet</option>
+                        <option value="1/2 sheet">1/2 sheet</option>
+                        <option value="3/4 sheet">3/4 sheet</option>
+                        <option value="Full sheet">Full sheet</option>
+                    </select>
+                </label>
+            </div>
+
+             <div class="form-row">
+                <label>
+                    <span>Flavor</span>
+                    <select name="flavour">
+                        <option value="Black Forest">Black Forest</option>
+                        <option value="Pine apple">Pineapple</option>
+                        <option value="Butter scotch">Butterscotch</option>
+                        <option value="Mixed fruit">Mixed fruit</option>
+                        <option value="Cherry">Cherry</option>
+                        <option value="Cookie cream">Cookie cream</option>
+                        <option value="White forest">White forest</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>Special</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" name="spec" value="regular">
+                            <span>Regular</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="spec" value="eggless">
+                            <span>Eggless</span>
+                        </label>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="form-row">
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" ROWS="3" COLS="30" ID="message" placeholder="No message"></textarea>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Price</span>
+                    <input type="text" name="price" id="price" >
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Advance</span>
+                    <input type="text" name="advance" id="advance" placeholder="0" >
+                </label>
+            </div>
+
+
+
+
+
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
